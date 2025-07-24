@@ -133,7 +133,7 @@ void server() {
 
 int main() {
     std::cout << "Starting webservice at http://localhost:8080\n";
-    if (!initDatabase()) {
+    if (!initDatabase("")) {
         std::cerr << "Failed to init DB\n";
         return 1;
     }

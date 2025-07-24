@@ -7,7 +7,7 @@ struct Item {
     std::string name;
 };
 
-bool initDatabase();
+bool initDatabase(const std::string& path = "");
 int createItem(const std::string& name);
 std::vector<Item> getAllItems();
 Item getItemById(int id);
